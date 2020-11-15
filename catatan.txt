@@ -1,0 +1,27 @@
+1. Install Nodejs Include NPM
+2. Install Yarn di dalam nodejs, fungsinya sama dengan NPM
+3. Install Vue.js sebagai front End Dev didalam Nodejs
+   a. example install Vuejs di directory D:
+      di terminal windows :>> cd D:
+                           >> yarn add vue bootstrap-vue boostrap
+                           >> vue create testhendra   //  "testhendra nama directory yang akan dibikin"
+                           >> subl . atau code .      // subl. untuk running code di sublime dan code . untuk di VS Code, terlebih dahulu install dulu sublime atau VS Code
+                           >> yarn add axios          //untuk get data di beda app atau server (agar komunikasi antara frontend(Vuejs) dan Backend(laravel) bisa saling terhubung) untuk frontend dan backendnya bebas
+                           >> yarn serve atau npm serve  // untuk running nodejs atau Vuejs Default port Vuejs 8080
+  b. tambahkan atau import library vue-bootstarp dan bootstrap ke file main.js :  // untuk library nya bisa baca2 di : https://bootstrap-vue.org/docs
+       import 'bootstrap/dist/css/bootstrap.css'
+       import 'bootstrap-vue/dist/bootstrap-vue.css'
+	  import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+	
+4. Install Laravel 7
+   a. sebelum Install Laravel 7, install terlebih dahulu PHP dan Composer (untuk PHP bisa menggunakan XAMPP atau mau install PHP tersendiri)
+   b. Install Database , misalnya seperti MySQL, PostgreSQL, Oracle (Bebas mau install semua atau tidak. Untuk MySQL bisa menggunakan XAMPP)
+   c. example membuat project Laravel di D:
+      di terminal windows : >> cd D: \laravel    //akses directory letak laravel diinstall
+                            >> composer create-project --prefer-disk laravel/laravel testhendra "7.0"  // untuk membuat project laravel dengan nama "testhendra"
+                            >> subl . atau code . // subl. untuk running code di sublime dan code . untuk di VS Code, terlebih dahulu install dulu sublime atau VS Code
+                            >> php artisan serve  // untuk running laravel nya Default port laravel 8000
+                            >> php artisan make:controller HendraController   // untuk membuat file di dalam directory controller laravel
+                            >> php artisan tinker  // untuk membuat database bohongan di dalam database (tinker akan mengarahkan masuk ke dalam "Psy Shell"
+                               >>> factory(\App\User::class,100)->create()   
+                     
